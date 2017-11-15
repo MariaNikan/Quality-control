@@ -12,15 +12,15 @@ string TypeOfTriangle(double a, double b, double c)
 	string output = "";
 	if ((a == b)&&(a == c)&&(b == c))
 	{
-		output = "Equilateral";
+		output = "Равносторонний";
 	}
 	else if ((a == b)||(a == c)||(b == c))
 	{
-		output = "Isosceles";
+		output = "Равнобедренный";
 	}
 	else
 	{
-		output = "Normal";
+		output = "Обычный";
 	}
 	return output;
 }
@@ -34,7 +34,7 @@ void KindOfShape(double a, double b, double c)
 	}
 	else
 	{
-		output = "Not triangle";
+		output = "Не треугольник";
 	}
 	cout << output;
 }
@@ -47,7 +47,7 @@ void S(double a, double b, double c)
 	}
 	else
 	{
-		cout << "Enter not";
+		cout << "Введено неверно";
 	}
 }
 
@@ -61,9 +61,10 @@ void DetermineTheShape(char* a, char* b, char* c)
 
 int main(int arg_c, char * arg_v[])
 {
+	setlocale(LC_ALL, "Rus");
 	if (arg_c != 4)
 	{
-		cout << "Specify the lengths of the sides as parameters. The input format: triangle.exe a b c";
+		cout << "Укажите длины сторон в качестве параметров. Вводный формат: triangle.exe a b c";
 		return 1;
 	}
 	char* a = arg_v[1];
