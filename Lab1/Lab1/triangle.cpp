@@ -7,26 +7,6 @@
 
 using namespace std;
 
-/*void TranslateToDouble(string side)
-{
-	double number;
-	char* integer = "";
-	string afteInteger = "";
-	auto pos = side.find(".");
-	for (size_t i = 0; i < side.size(); i++)
-	{
-		if (i < pos)
-		{
-			integer.push_back(side[i]);
-		}
-		else if (i > pos)
-		{
-			afteInteger.push_back(side[i]);
-		}
-	}
-	int first = atoi(integer);
-}*/
-
 string TypeOfTriangle(double a, double b, double c)
 {
 	string output = "";
